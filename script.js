@@ -54,38 +54,14 @@ return true;
 
 // Razorpay Payment
 
-function payNow() {
+function payNow(){
 
-    if (!validateForm()) return;
+if(!validateForm()) return;
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const address = document.getElementById("address").value;
-    const pin = document.getElementById("pin").value;
+window.location.href="https://rzp.io/rzp/F25lIYW";
 
-    const date = new Date().toLocaleString();
-
-    const message =
-`🛍️ *NEW ONLINE ORDER*
-
-📦 Product: Automatic Shoe Cleaning Brush
-💰 Price: ₹149
-
-👤 Name: ${name}
-📞 Phone: ${phone}
-🏠 Address: ${address}
-📮 PIN: ${pin}
-
-🕒 Order Time: ${date}
-
-💳 Customer wants to pay online.
-Please send the Razorpay payment link.`;
-
-window.open(
-`https://wa.me/918281034177?text=${encodeURIComponent(message)}`,
-"_blank"
-);
 }
+
 
 // Cash On Delivery
 
@@ -116,7 +92,7 @@ const message=
 
 window.open(
 
-`https://wa.me/918921434261?text=${message}`,
+`https://wa.me/918281034177?text=${message}`,
 
 "_blank"
 

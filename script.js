@@ -81,10 +81,10 @@ function payNow() {
 💳 Customer wants to pay online.
 Please send the Razorpay payment link.`;
 
-    window.open(
-        `https://wa.me/918281034177?text=${encodeURIComponent(message)}`,
-        "_blank"
-    );
+window.open(
+`https://wa.me/918281034177?text=${encodeURIComponent(message)}`,
+"_blank"
+);
 }
 
 // Cash On Delivery

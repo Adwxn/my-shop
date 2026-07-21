@@ -116,7 +116,7 @@ const message=
 
 window.open(
 
-`https://wa.me/918281034177?text=${message}`,
+`https://wa.me/918921434261?text=${message}`,
 
 "_blank"
 

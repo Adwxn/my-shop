@@ -58,10 +58,27 @@ function payNow(){
 
 if(!validateForm()) return;
 
-window.location.href="https://razorpay.me/@adwinjacob";
+const name=document.getElementById("name").value;
+const phone=document.getElementById("phone").value;
+const address=document.getElementById("address").value;
+const pin=document.getElementById("pin").value;
+
+const message=
+`🛍️ *NEW ONLINE ORDER*%0A%0A`+
+`📦 Product: Automatic Shoe Cleaning Brush%0A`+
+`💰 Price: ₹149%0A%0A`+
+`👤 Name: ${name}%0A`+
+`📞 Phone: ${phone}%0A`+
+`🏠 Address: ${address}%0A`+
+`📮 PIN: ${pin}%0A%0A`+
+`💳 I want to pay online. Please send me the Razorpay payment link.`;
+
+window.open(
+`https://wa.me/918281034177?text=${message}`,
+"_blank"
+);
 
 }
-
 
 // Cash On Delivery
 
